@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Second</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="p-0 m-0 flex items-center justify-center">
+    <div
+      class="bg-zinc-800 w-full min-h-screen text-white flex items-center py-20 flex-col"
+    >
+      <div
+        class="preload fixed top-0 bottom-0 left-0 right-0 bg-orange-400 z-10 grid place-content-center justify-center duration-500 border-s"
+        data-preaload
+      >
+        <div
+          class="circle w-32 h-32 rounded-full border-8 border-slate-800 animate-spin"
+          style="margin-block-end: 45px; border-block-start-color: white"
+        ></div>
+        <p class="text-3xl font-bold text-slate-700 text-center">Loading...</p>
+      </div>
+      <div class="flex gap-4 items-center justify-center">
+        <a href="./index.html">Home</a>
+        <a href="./second.html">Second</a>
+        <a href="./third.html">Third</a>
+      </div>
+      <div class="container w-full text-center py-10">
+        <div class="text-4xl">Second Page</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

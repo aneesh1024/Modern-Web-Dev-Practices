@@ -1,0 +1,35 @@
+body{
+    overflow-x: hidden;
+}
+body.preload{
+    overflow: overlay;
+}
+
+.preload{
+    transition: 500ms;
+}
+
+.preload>* {
+    transition: 500ms;
+}
+
+.preload.loaded>* {
+    opacity: 0;
+}
+
+.preload.loaded {
+    transition-delay: 250ms;
+    transform: translateY(100%);
+}
+#mouse-follower{
+    animation: spin infinite 1s linear;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    100%{
+        transform: rotateZ(360deg);
+    }
+}
