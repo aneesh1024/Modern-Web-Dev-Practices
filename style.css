@@ -21,15 +21,3 @@ body.preload{
     transition-delay: 250ms;
     transform: translateY(100%);
 }
-#mouse-follower{
-    animation: spin infinite 1s linear;
-}
-
-@keyframes spin {
-    0%{
-        transform: rotateZ(0deg);
-    }
-    100%{
-        transform: rotateZ(360deg);
-    }
-}
